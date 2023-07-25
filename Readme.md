@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Alexei Ishtuganov](https://up.htmlacademy.ru/adaptive/29/user/1853321).
-* Наставник: `Неизвестно`.
+* Наставник: `one love Алиса Пепел (https://htmlacademy.ru/profile/id615601)`.
 
 ---
 
