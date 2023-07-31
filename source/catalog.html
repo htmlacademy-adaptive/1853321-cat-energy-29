@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="index" lang="ru">
+<html class="catalog" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="index__body container">
-    <header class="index__header">
+  <body class="catalog__body container">
+    <header class="catalog__header">
       <ul class="list-navigation">
         <li class="list-navigation__item">
           <a class="list-navigation__link" href="#">
@@ -26,10 +26,10 @@
             <div class="site-navigation__wrapper">
               <ul class="site-navigation__list">
                 <li class="site-navigation__list-item">
-                  <a class="site-navigation__link" href="#">Главная</a>
+                  <a class="site-navigation__link" href="index.html">Главная</a>
                 </li>
                 <li class="site-navigation__list-item">
-                  <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
+                  <a class="site-navigation__link" href="#">Каталог продукции</a>
                 </li>
                 <li class="site-navigation__list-item">
                   <a class="site-navigation__link" href="form.html">Подбор программы</a>
@@ -40,63 +40,209 @@
         </li>
       </ul>
     </header>
-    <main class="index__main">
-      <section class="hero hero--background-img">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
-        <p class="hero__subtitle description">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="../source/img/hero-img.png" width="280" height="270" alt="Cat energy со вкусом курицы.">
-        <a class="button button--action" href="#">Подобрать программу</a>
-      </section>
-      <section class="about">
-        <ul class="about__list">
-          <li class="about__list-item">
-            <h2 class="about__title">Похудение</h2>
-            <p class="about__description description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="about__link" href="#">Каталог slim</a>
-          </li>
-          <li class="about-list-item">
-            <h2 class="about__title">Набор массы</h2>
-            <p class="about__description description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="about__link" href="#">Каталог pro</a>
-          </li>
-        </ul>
-      </section>
-      <section class="advantages">
-        <h2 class="title">Как это работает</h2>
-        <ul class="advantages-list">
-          <li class="advantages-list__item advantages-list__item--leaf">
-            <p class="description">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--powder">
-            <p class="description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--eat">
-            <p class="description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--watch">
-            <p class="description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="results">
-        <h2 class="title">Живой пример</h2>
-        <p class="description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <dl class="results-list">
-          <div class="results-list__wrapper">
-            <dt class="results-list__meaning">Cнижение веса</dt>
-            <dd class="results-list__value">5 КГ</dd>
+    <main class="catalog__main">
+      <h1 class="visually-hidden">Широкий выбор продукции от компании Cat energy.</h1>
+      <section class="product">
+        <h2 class="product__title">Каталог продукции</h2>
+        <div class="product__cards-wrapper">
+          <ul class="cards-list">
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy PRO 500 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_500g_chiсken.png" width="68" height="86" alt="Со вкусом курицы 500 грамм.">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">500 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Курица</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">700 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy PRO 1000 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_1000g_chiсken.png" width="84" height="100" alt="Со вкусом курицы 1000 грамм.">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">1000 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Курица</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">1000 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy PRO 500 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_500g_fish.png" width="68" height="78" alt="Со вкусом рыбы 500 грамм">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">500 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Рыба</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">700 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy PRO 1000 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_1000g_fish.png" width="84" height="100" alt="Со вкусом рыбы 1000 грамм.">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">1000 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Рыба</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">1000 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy slim 500 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_500g_buckwheat.png" width="68" height="78" alt="Со вкусом гречки 500 грамм.">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">500 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Гречка</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">400 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy slim 1000 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_1000g_buckwheat.png" width="84" height="100" alt="Со вкусом гречки 1000 грамм.">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">1000 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Гречка</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">700 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="card">
+                <h3 class="card__caption">Cat Energy slim 500 г</h3>
+                <img class="card__img" src="/source/img/catalog-card/cat_energy_pro_500g_rice.png" width="72" height="84" alt="Со вкусом риса 500 грамм.">
+                <ul class="card__list-feature">
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Масса</span>
+                    <span class="card__list-item-meaning">500 г</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Вкус</span>
+                    <span class="card__list-item-meaning">Рис</span>
+                  </li>
+                  <li class="card__list-item">
+                    <span class="card__list-item-propery">Цена</span>
+                    <span class="card__list-item-meaning">500 ₽</span>
+                  </li>
+                </ul>
+                <button class="card__button button button--action" type="button">Заказать</button>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <h3 class="cards-list__caption">Показать еще 100500 товаров</h3>
+              <p class="cards-list__caption__description">На самом деле вкусов гораздо больше!</p>
+              <a class="cards-list__button button button--action button--more" href="#">Показать все</a>
+            </li>
+          </ul>
+        </div>
+        <div class="product__related-product-wrapper">
+          <section class="related-product">
+            <header class="related-product__header">
+              <h2 class="related-product__title">Дополнительные товары</h2>
+            </header>
+            <div class="related-product__wrapper">
+              <ul class="related-product__list">
+                <li class="related-product__list-item">
+                  <h3 class="related-product__title">Сахарозаменитель</h3>
+                  <span class="related-product__shape">1 упаковка (100 г)</span>
+                  <span class="related-product__price">200 ₽</span>
+                  <button class="related-product__button button button--action">Заказать</button>
+                </li>
+                <li class="related-product__list-item">
+                  <h3 class="related-product__title">Питьевая вода</h3>
+                  <span class="related-product__shape">5 литров</span>
+                  <span class="related-product__price">50 ₽</span>
+                  <button class="related-product__button button button--action">Заказать</button>
+                </li>
+                <li class="related-product__list-item">
+                  <h3 class="related-product__title">Молоко</h3>
+                  <span class="related-product__shape">1 литр</span>
+                  <span class="related-product__price">100 ₽</span>
+                  <button class="related-product__button button button--action">Заказать</button>
+                </li>
+                <li class="related-product__list-item">
+                  <h3 class="related-product__title">Витамины</h3>
+                  <span class="related-product__shape">1 упаковка (30 г)</span>
+                  <span class="related-product__price">300 ₽</span>
+                  <button class="related-product__button button button--action">Заказать</button>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <article class="article">
+          <div class="article__wrapper article__background-images">
+            <h2 class="article__title">Закажите все и получите чехол для кота в подарок!</h2>
           </div>
-          <div class="results-list__wrapper">
-            <dt class="results-list__meaning">затрачено времени</dt>
-            <dd class="results-list__value">60 ДНЕЙ</dd>
-          </div>
-        </dl>
-        <p class="results-text">Затраты на питание: 15 000 РУБ.</p>
-        <!-- ЗДЕСЬ БУДЕТ СЛАЙДЕР -->
-        <img src="../source/img/slider.png" width="560" height="512" alt="Слайдер.">
+        </article>
       </section>
     </main>
-    <footer class="index__footer footer">
+    <footer class="catalog__footer footer">
       <div class="footer__wrapper">
         <h2 class="footer__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="footer__address">ул. Большая Конюшенная, д. 19/8Санкт-Петербург</address>
